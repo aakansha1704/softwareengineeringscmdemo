@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Anitheme</title>
+        <body>
+            <style>
+                *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, #b65887 0%, #bdcccf 100%);
+}
+.menu {
+    display: inline-flex;
+    margin: 50px;
+    width:100%;
+}
+.menu div{
+   list-style: none;
+    margin: 0 20px;
+    color: #8B008B;
+    cursor: pointer;
+} 
+/*.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}*/
+img {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    margin: 5px 0px 5px 75px;
+
+}
+
+            </style>
+            <html>
+                <head>
+                    <title>Shows by theme</title>
+                    <link rel="stylesheet" href="webpc.css">
+                    <body>
+                        <div class="container">
+                            <div class="menu">
+                                <!-- <ul> -->
+                                    <div>Home</div>
+                                    <div>Genre</div>
+                                    <div>Prominent theme</div>
+                                    <div>Suggestions</div>
+                                    <div>About us</div>
+                                    <div><a href="#" class="su-btn"></a>Sign up</div>
+                                <!-- </ul> -->
+                            </div>
+                            <!-- <div class="triangle-right"></div> -->
+                            <a id="myButton" style="float:left;" href="https://myanimelist.net/anime/16067/Nagi_no_Asu_kara" title="Nagi no Asakura">
+                                <img src="naseaa.PNG" alt="Nagi" style="width:200px"/>
+                            </a>
+                        </div>
+                        <script src="https://unpkg.com/@popperjs/core@2"></script>
+                        <script src="https://unpkg.com/tippy.js@6"></script>
+                        <script>
+                            tippy('#myButton', {
+                                content: 'Sea theme: Shows where the sea plays an essential role.',
+                                placement: 'right'
+                            });                
+                        </script>
+                    </body>
+                </head>
+            </html>
+
+        </body>
+     </head>
+    
+</html>
